@@ -1,0 +1,18 @@
+Definition - What does Bourne Again Shell (Bash) mean?
+Bourne again shell (Bash) is a free Unix shell that can be used in place of the Bourne shell. It is a complete implementation of the IEEE Portable Operating System Interface for Unix (POSIX) and Open Group shell specification. 
+
+Bash is basically a command processor that typically runs in a text window, allowing the user to type commands that cause actions. It can read commands from a file, called a script. Like all Unix shells it supports the following:
+
+File name wildcarding
+Piping
+Hear documents
+Command execution
+Variables and control structures for condition testing and iteration
+Techopedia explains Bourne Again Shell (Bash)
+Bash was written for the GNU Project by Brian Fox. It is called Bourne again shell for many reasons, the first being that it is the open-source version of the Bourne shell and the second as a pun on the concept of being born again. Its acronym is also a description of what the project did, which was to bash together sh, csh, and ksh features. 
+
+A Unix shell is a command-line interpreter that provides users with a basic user interface. It allows users to communicate with the system through a series of commands that are typed in the command-line window. There are no buttons or pop-up windows in a shell, simply lots and lots of text. 
+
+Essentially, Bash allows users of Unix-like systems to control the innermost components of the operating system using text-based commands. 
+
+Bash has a number of extensions and runs on Unix-like operating systems like Linux and Mac OS X. It was ported to Windows through the Subsystem for UNIX-based Applications (SUA) and by POSIX emulation using Cygwin or MSYS. It can even be used in MS-DOS.

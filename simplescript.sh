@@ -1,24 +1,21 @@
 #! /bin/bash
 
-# echo
+# ECHO
 echo "Hello Mr kumar"
 
 
-# Variable  Uppercase by convention  --- use numbers, letters, underscores
-
+# VARIABLE  Uppercase by convention  --- use numbers, letters, underscores
 NAME="Arpit"
 # echo "my name is $NAME"
 # echo "my name is ${NAME}"
 
 
-# user imput    -p for prompt
-
+# USER INPUT    -p for prompt
 # read -p "Enter your name: " NAME
 # echo "Hello $NAME, its good to see you"
 
 
 # IF
-
 # if [ "$NAME" == "Sobhit" ]
 # then
 #   echo "you are admin"
@@ -26,7 +23,6 @@ NAME="Arpit"
 
 
 # IF-ELSE
-
 # if [ "$NAME" == "Sobhit" ]
 # then
 #   echo "you are admin"
@@ -46,7 +42,7 @@ else
   echo "you are not admin"
 fi
 
-
+# Comparison
 NUM1=10
 NUM2=7
 if [ "$NUM1" -gt "$NUM2" ]
@@ -65,8 +61,8 @@ fi
 ########
 
 
-# File Conditions
-FILE="test"
+# FILE CONDITIONS
+FILE="new-test"
 if [ -f "$FILE" ]
 then 
   echo "$FILE is a file."
@@ -84,6 +80,73 @@ fi
 # -w    True if the file is writable
 # -x    True if the file is an executable
 ########
+
+
+# CASE STATEMENTS
+# read -p "are you above 18 ?" ANSWER
+# case "$ANSWER" in 
+#   [yY] | [yY][eE][sS])
+#     echo "you are eligible to vote. :)"
+#       ;;
+#   [nN] | [nN][oO])
+#     echo "Sorry, you are not eligible to vote."
+#     ;;
+#   *)
+#     echo "Please enter (y/yes) or (n/no) in answer."
+#     ;;
+# esac  
+
+
+# FOR LOOP
+# JOBS="engineer plumber manager student teacher"
+# for JOB in $JOBS
+#   do 
+#     echo "I am $JOB"
+# done   
+
+
+# FOR LOOP TO RENAME FILES -- will add new to the every file name
+# FILES=$(ls *.txt)
+# NEW="new"
+# for FILE in $FILES
+#   do
+#     echo "Renaming $FILE to $NEW-$FILE"
+#       mv $FILE $NEW-$FILE
+# done
+
+
+# WHILE LOOP --- read through a file line by line
+# LINE=1
+# while read -r CURRENT_LINE
+#   do
+#     echo "$LINE: $CURRENT_LINE"
+#     ((LINE++))
+# done < "./new-1.txt"   
+
+
+# FUNCTION
+# function sayHello(){
+#   echo "Hello Sobhit"
+# }
+# sayHello
+
+
+# FUNCTION - with parameters
+# function greet(){
+#   echo "Hello, I am $1 and i am $2";
+# }
+
+# greet "27" "software developer"
+
+
+# RUN CHAIN OF COMMANDS
+mkdir Hello_folder
+touch Hello_folder/world.txt
+echo "world.txt file created"
+echo "Hello Mr Sobhit Kumar" >> "Hello_folder/hello.txt"
+
+
+
 
 
 
